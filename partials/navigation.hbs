@@ -1,0 +1,23 @@
+
+<nav class="navigation-container">
+	<nav class="navigation">
+		<ul>
+			<ul class="navigation-header-list">
+				{{#if @blog.navigation}}
+				<li class="navigation-li navmenu">
+					<img style="margin-top: 1rem;" src="{{asset "images/logo_16x16.png"}}"/>
+				</li>
+				{{/if}}
+				{{#foreach navigation}}
+				<li {{#if @first}}class="navigation-li navmenu" {{else}} class="navigation-li navmenu-item"{{/if}}>
+					<a href="{{url}}">{{label}}</a>
+				</li>
+				{{#if @first}}
+			</ul>
+			<ul class="navigation-item-list">
+				{{/if}}
+				{{/foreach}}
+			</ul>
+		</ul>
+	</nav>
+</nav>

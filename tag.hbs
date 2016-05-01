@@ -1,0 +1,40 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The main content area on the homepage }}
+{{navigation}}
+<main class="content" role="main">
+
+    <section class="tag-archive-header">
+        <h1>{{tag.name}}</h1>
+        <p class="inner">{{tag.description}}</p>
+        <h2 class="page-description"><b>{{plural pagination.total empty='No posts' singular='% post' plural='% posts'}}</b> in collection</h2>
+    </section>
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+
+
+        <header class="post-header">
+            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on " separator=" "}}</span>
+            <h6 class="post-title"><a href="{{url}}">{{{title}}}</a></h6>
+
+        </header>
+        <section class="post-excerpt">
+            {{#if image}}
+                <p class="post-img" style="background: url({{image}});"></p>
+            {{/if}}
+            <p>
+              {{meta_description}}&hellip;
+            </p>
+        </section>
+    </article>
+
+    {{/foreach}}
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+</main>

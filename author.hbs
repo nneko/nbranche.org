@@ -1,0 +1,52 @@
+{{!< default}}
+{{navigation}}
+<main class="content" role="main">
+
+    {{! Everything inside the #author tags pulls data from the author }}
+    {{#author}}
+    <header  class="tag-header author-header post-header main-header author-head {{#if cover}}" <!-- style="background-image: url({{cover}})-->no-cover{{else}}no-cover{{/if}}">
+        <section class="author-profile">
+            {{#if image}}
+
+            <img class="author-image" src="{{image}}" title="{{name}}'s Picture"/>
+            {{/if}}
+            <h1 class="author-title">{{name}}</h1>
+            <p class="author-bio inner">{{bio}}</p>
+            <div class="author-meta">
+                <a class="back-button icon-arrow-left" href="{{@blog.url}}"> Home</a>
+                {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+                <a class="subscribe-button icon-feed" href="{{url}}rss/"> {{name}}</a>
+            </div>
+        </section>
+    </header>
+    {{/author}}
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+    <article class="{{post_class}}"
+    {{#if @last}} style="border:none;"{{/if}}>
+        <header class="post-header">
+            <span class="post-meta">
+                {{#author}}
+                <a class="author-url" href="{{url}}">{{name}}</a>
+                {{/author}}
+                {{tags prefix="on "}}
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+            </span>
+            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+
+        </header>
+        <section class="post-excerpt">
+            {{#if image}}
+                <p class="post-img" style="background: url({{image}});"></p>
+            {{/if}}
+            <p>
+              {{meta_description}}
+            </p>
+        </section>
+    </article>
+    {{/foreach}}
+{{pagination}}
+</main>
