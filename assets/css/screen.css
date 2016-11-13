@@ -464,8 +464,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
     position: relative;
-    width: 80%;
-    max-width: 700px;
+    max-width: 38%;
     margin: 0 auto;
 }
 
@@ -853,9 +852,9 @@ margin on the iframe, cause it breaks stuff. */
 /* Break out larger images to be wider than the main text column
    the class is applied with jQuery */
 .post-content .full-img {
-    width: 126%;
+    width: 100%;
     max-width: none;
-    margin: 0 -13%;
+    margin: 0;
 }
 
 .post-content a:hover {
@@ -1216,8 +1215,8 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     margin: 0;
     padding: 0;
-    padding-bottom: 4em;
-    padding-top: 8em;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
     /*border-top: #eee 1px solid;*/
     font-family: 'Arial', sans-serif;
     font-size: 1.3rem;
@@ -1484,6 +1483,11 @@ clear: both;
         padding: 40px 0;
     }
 
+    .inner {
+        width: auto;
+        max-width: 80%;
+    }
+
     h1 {
         font-size: 4.8rem;
     }
@@ -1517,6 +1521,7 @@ clear: both;
         width: auto;
         margin-left: 16px;
         margin-right: 16px;
+        max-width: 100%;
     }
 
     .pagination {

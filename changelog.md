@@ -4,6 +4,10 @@ This is the default theme for the [blog](http://github.com/tryghost/ghost/) engi
 
 ## Changelog
 
+###v2.2
+
+	* Minor style tweaks
+
 ###v2.1
 
 	* Social media plugins added to end of post
