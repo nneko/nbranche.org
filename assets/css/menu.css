@@ -76,7 +76,12 @@
     cursor: pointer;
 }
 
+.post-nav ul {
+  display: block;
+}
+
 .post-nav li {
+    display: inline;
     list-style: none;
 }
 
