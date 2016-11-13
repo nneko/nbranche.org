@@ -1,16 +1,16 @@
 # nbranche theme for ghost
 
-A minimalist blog theme for [Ghost](https://ghost.org) and the default visual style for [nbranche.org](http://nbranche.org). Design is suitable for traditional blogs relying on the chronological stream format.
+A minimalist blog theme for [Ghost](https://ghost.org) and the default visual style for [nbranche.org](http://nbranche.org). The design is best suited for traditional blogs relying on the chronological stream format that wish to display the post content inline.
 
-Full post content is displayed directly in the index and the focus is heavily on written content instead of visual imagery and big splashy covers and featured images to introduce posts.
+Full post content is displayed directly in the index and the focus is on showcasing the written content at the expense of heavy visual imagery and big splashy covers or feature images which is used by other design paradigms as the primary means to introduce/highlight a new post.
 
 ![Screenshot](https://raw.githubusercontent.com/nneko/nbranche.org/master/assets/screenshots/screenshot1.jpg)
 
-To utilize replace the icons in /assets/images/favicon.ico and /assets/images/logo_16x16.png before deploying.
+When deploying replace the icons in /assets/images/favicon.ico and /assets/images/logo_16x16.png.
 
 ## Copyright & License
 
-Copyright (c) 2014 Nneko Branche - Released under the MIT License.
+Copyright &copy; Nneko Branche. Released under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
