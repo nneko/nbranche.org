@@ -73,8 +73,28 @@
 }
 
 .navmenu {
-  cursor: pointer;
+    cursor: pointer;
 }
+
+.post-nav li {
+    list-style: none;
+}
+
+.post-nav a {
+    border: none;
+    color: #bbb;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.5rem auto;
+    font-weight: normal;
+}
+
+.post-nav a:hover {
+    border:none;
+    color: black;
+    font-weight: normal;
+}
+
 
 @media only screen and (max-width: 1024px) {
 

@@ -4,6 +4,16 @@ This is the default theme for the [blog](http://github.com/tryghost/ghost/) engi
 
 ## Changelog
 
+###v2.4
+
+	* Added next link to end of post
+	* Fixed missing icons for author page
+
+###v2.3
+
+	* Moved author link to bottom of post
+	* Added home/previous post link to end of post
+
 ###v2.2
 
 	* Minor style tweaks

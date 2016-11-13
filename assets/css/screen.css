@@ -129,24 +129,20 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 
 /* Apply these base styles to all icons */
-.icon-ghost:before,
-.icon-feed:before,
-.icon-twitter:before,
-.icon-google-plus:before,
-.icon-facebook:before {
-    font-family: 'icons';
+[class^="icon-"], [class*=" icon-"] {
+    font-family: "icons", "Open Sans", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    text-decoration: none;
+    text-decoration: none !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Each icon is created by inserting the corret character into the
+/* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
 .icon-ghost:before {
     content: "\e000";
@@ -163,6 +159,19 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 .icon-facebook:before {
     content: "\e004";
+}
+.icon-arrow-left:before {
+    content: "\e005";
+}
+.icon-stats:before {
+    content: "\e006";
+}
+.icon-location:before {
+    content: "\e007";
+    margin-left: -3px; /* Tracking fix */
+}
+.icon-link:before {
+    content: "\e008";
 }
 
 
@@ -729,6 +738,10 @@ margin on the iframe, cause it breaks stuff. */
         background: #D6EDFF;
         color: #222;
         text-decoration: none;
+}
+
+.post-meta-end {
+  text-align: left;
 }
 
 .user-meta {
