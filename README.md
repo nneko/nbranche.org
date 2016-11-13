@@ -4,7 +4,7 @@ A minimalist blog theme for [Ghost](https://ghost.org) and the default visual st
 
 Full post content is displayed directly in the index and the focus is heavily on written content instead of visual imagery and big splashy covers and featured images to introduce posts.
 
-![Screenshot](https://github.com/nneko/nbranche.org/tree/master/assets/screenshots/screenshot1.jpg)
+![Screenshot](https://raw.githubusercontent.com/nneko/nbranche.org/master/assets/screenshots/screenshot1.jpg)
 
 To utilize replace the icons in /assets/images/favicon.ico and /assets/images/logo_16x16.png before deploying.
 
