@@ -4,11 +4,11 @@
 
     {{! Everything inside the #author tags pulls data from the author }}
     {{#author}}
-    <header  class="tag-header author-header post-header main-header author-head {{#if cover}}" <!-- style="background-image: url({{cover}})-->no-cover{{else}}no-cover{{/if}}">
+    <header  class="tag-header author-header post-header main-header author-head {{#if cover_image}}" <!-- style="background-image: url({{cover_image}})-->no-cover{{else}}no-cover{{/if}}">
         <section class="author-profile">
-            {{#if image}}
+            {{#if profile_image}}
 
-            <img class="author-image" src="{{image}}" title="{{name}}'s Picture"/>
+            <img class="author-image" src="{{img_url profile_image}}" title="{{name}}'s Picture"/>
             {{/if}}
             <h1 class="author-title">{{name}}</h1>
             <p class="author-bio">{{bio}}</p>
@@ -39,8 +39,8 @@
 
         </header>
         <section class="post-excerpt">
-            {{#if image}}
-                <p class="post-img" style="background: url({{image}});"></p>
+            {{#if feature_image}}
+                <p class="post-img" style="background: url({{img_url feature_image}});"></p>
             {{/if}}
             <p>
               {{meta_description}}

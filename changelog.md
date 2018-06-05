@@ -1,8 +1,13 @@
 # nbranche theme for ghost
 
-This is the default theme for the [blog](http://github.com/tryghost/ghost/) engine that powers [nbranche.org](http://nbranche.org).
+This is the default theme for the blog engine that powers [nbranche.org](http://nbranche.org).
 
 ## Changelog
+
+###v2.5
+
+  * Removed share and like buttons
+	* Updated code for compatibility with Ghost 1.0+
 
 ###v2.4
 

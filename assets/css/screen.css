@@ -679,6 +679,7 @@ margin on the iframe, cause it breaks stuff. */
     margin:0;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
 }
 
 .post-title a {
@@ -806,7 +807,7 @@ margin on the iframe, cause it breaks stuff. */
     color: #BE4E3B;
     font-size: 10rem;
     font-weight: bold;
-    padding-top: 6rem;
+    /*padding-top: 6rem;*/
     padding-bottom: 1rem;
     text-align: center;
     margin: 0 auto;
@@ -1075,16 +1076,16 @@ margin on the iframe, cause it breaks stuff. */
    6. Tag archive
    ========================================================================== */
 
-.archive-template .site-head {
+.paged .site-head {
     height: auto;
     padding-bottom: 5rem;
 }
 
-.archive-template .site-head a {
+.paged .site-head a {
     color: #777;
 }
 
-.archive-template .blog-logo {
+.paged .blog-logo {
     display: block;
     margin-top: 5rem;
 }
@@ -1115,7 +1116,7 @@ margin on the iframe, cause it breaks stuff. */
     box-shadow: #fff 0 0 0 5px;
 }
 
-.archive-template .blog-title {
+.paged .blog-title {
     display: block;
     /*padding: 2.5rem 0;*/
 }
