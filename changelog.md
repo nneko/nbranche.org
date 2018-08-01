@@ -4,6 +4,9 @@ This is the default theme for the blog engine that powers [nbranche.org](http://
 
 ## Changelog
 
+###v2.5.2
+  * Removed redundant footer block at end of pages as a standard footer block is already added by the default template.
+
 ###v2.5
 
   * Removed share and like buttons
