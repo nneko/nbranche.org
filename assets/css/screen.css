@@ -473,7 +473,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
     position: relative;
-    max-width: 38%;
+    max-width: 40%;
     margin: 0 auto;
 }
 
@@ -638,8 +638,8 @@ margin on the iframe, cause it breaks stuff. */
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width:38%;
-    max-width: 38%;
+    width:40%;
+    max-width: 40%;
     margin: 0 auto;
     padding: 0;
     padding-top: 2rem;
